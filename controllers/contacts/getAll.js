@@ -17,13 +17,7 @@ const getAll = async (req, res, next) => {
     limit: Number(limit),
   }).populate("owner", "_id, email");
 
-  res.json({
-    status: "success",
-    code: 200,
-    data: {
-      result: contacts,
-    },
-  });
+  res.json(contacts);
 };
 
 module.exports = getAll;
