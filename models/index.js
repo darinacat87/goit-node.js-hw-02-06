@@ -4,6 +4,7 @@ const { favoriteContactSchema } = require("./contacts");
 const { User } = require("./user");
 const { userSchema } = require("./user");
 const { userSubscriptionSchema } = require("./user");
+const { verifyEmailSchema } = require("./user");
 
 module.exports = {
   contactSchema,
@@ -12,4 +13,5 @@ module.exports = {
   User,
   userSchema,
   userSubscriptionSchema,
+  verifyEmailSchema,
 };
